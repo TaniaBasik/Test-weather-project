@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Test project</title>
     <!-- CSS only -->
@@ -35,10 +36,10 @@
             </div>
           </div>
         </form>
-        <h1>Kryvyi Rih</h1>
+        <h1 id="city"></h1>
         <ul>
           <li>Friday 23:00</li>
-          <li>Partly cloudy</li>
+          <li id="condition"></li>
         </ul>
         <div class="row">
           <div class="col-6">
@@ -46,7 +47,7 @@
               src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
               alt="Cloudy icon"
             />
-            <span class="temperature">19</span>
+            <span id="temperature"></span>
             <span class="units">° C | <a href="#">F</a></span>
           </div>
           <div class="col-6">
@@ -110,6 +111,9 @@
           </div>
         </div>
       </div>
+      <a href="https://github.com/TaniaBasik/Test-weather-project"
+        >Open source </a
+      >by Tanya G.
       <script src="src/app.js"></script>
     </div>
   </body>
