@@ -6,6 +6,11 @@ function displayTemp(responce) {
     responce.data.weather[0].description);
   let cityElement = (document.querySelector("#city").innerHTML =
     responce.data.name);
+  let humidityEl = (document.querySelector("#humidity").innerHTML =
+    responce.data.main.humidity);
+  let windEl = (document.querySelector("#wind").innerHTML = Math.round(
+    responce.data.wind.speed
+  ));
 }
 
 let apiKey = "f1064a94adcdf33252dd0ace190896af";
